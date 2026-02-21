@@ -45,7 +45,7 @@ class _OrderTrackingScreenState extends State<OrderTrackingScreen> {
     } catch (e) {
       if (!mounted) return;
       setState(() {
-        _error = e.toString();
+        _error = userFriendlyErrorMessage(e);
         _loading = false;
       });
     }

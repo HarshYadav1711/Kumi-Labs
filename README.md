@@ -139,6 +139,22 @@ flutter run
 
 In `lib/services/api_service.dart`, base URLs use `10.0.2.2` for the Android emulator. For iOS simulator or a physical device, change them to your machine’s IP or `localhost` as appropriate.
 
+### Demo checklist (for recording)
+
+1. **Start backend**  
+   Either run all four services + MongoDB locally (see above), or run `docker compose up --build` from the repo root.
+
+2. **Seed catalog**  
+   If using Docker:  
+   `docker compose run --rm -e CATALOG_MONGODB_URL=mongodb://mongodb:27017 -e CATALOG_MONGODB_DB=catalog_db catalog python seed.py`  
+   If running catalog locally: from `services/catalog` run `python seed.py` once.
+
+3. **Start the app**  
+   From `app`: `flutter run` (emulator or device). Ensure base URLs in `api_service.dart` match your environment (e.g. `10.0.2.2` for Android emulator).
+
+4. **Suggested flow**  
+   Sign up → Home (products) → Add to cart → Cart → Place order → Order confirmation → Track order. If any screen shows "Cannot reach server", check that all four services and MongoDB are running.
+
 ---
 
 ## Docker and Kubernetes notes

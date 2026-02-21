@@ -23,6 +23,18 @@ class ApiException implements Exception {
   String toString() => message;
 }
 
+/// Returns a short, demo-friendly message for network/connection errors.
+String userFriendlyErrorMessage(Object e) {
+  final s = e.toString().toLowerCase();
+  if (s.contains('connection refused') ||
+      s.contains('failed host lookup') ||
+      s.contains('socket') ||
+      s.contains('network')) {
+    return 'Cannot reach server. Check that the backend is running.';
+  }
+  return e.toString();
+}
+
 final ApiService apiService = ApiService();
 
 class ApiService {

@@ -48,7 +48,7 @@ class _CartScreenState extends State<CartScreen> {
     } catch (e) {
       if (!mounted) return;
       setState(() {
-        _error = e.toString();
+        _error = userFriendlyErrorMessage(e);
         _loading = false;
       });
     }
@@ -89,7 +89,13 @@ class _CartScreenState extends State<CartScreen> {
       final order = await _api.createOrder(total);
       try {
         await _api.updateOrderStatus(order.orderRef, 'PLACED');
-      } catch (_) {}
+      } catch (_) {
+        if (mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text('Order placed. Tracking may be unavailable.')),
+          );
+        }
+      }
       if (!mounted) return;
       Navigator.pushReplacement(
         context,
