@@ -13,7 +13,7 @@ class _LoginScreenState extends State<LoginScreen> {
   final _formKey = GlobalKey<FormState>();
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
-  final _api = ApiService();
+  final _api = apiService;
 
   String? _error;
   bool _loading = false;
@@ -35,7 +35,7 @@ class _LoginScreenState extends State<LoginScreen> {
         email: _emailController.text.trim(),
         password: _passwordController.text,
       );
-      _api.setToken(token);
+      _api.setAuth(token, _emailController.text.trim());
       if (!mounted) return;
       Navigator.pushReplacementNamed(context, '/home');
     } on ApiException catch (e) {

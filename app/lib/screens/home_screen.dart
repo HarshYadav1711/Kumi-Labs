@@ -11,7 +11,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  final _api = ApiService();
+  final _api = apiService;
   List<Product> _products = [];
   String? _error;
   bool _loading = true;
@@ -49,10 +49,31 @@ class _HomeScreenState extends State<HomeScreen> {
     }
   }
 
+  Future<void> _addToCart(Product p) async {
+    try {
+      await _api.addToCart(p.productId, quantity: 1);
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Added ${p.name} to cart')),
+      );
+    } on ApiException catch (e) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(e.message)));
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Products')),
+      appBar: AppBar(
+        title: const Text('Products'),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.shopping_cart_outlined),
+            onPressed: () => Navigator.pushNamed(context, '/cart'),
+          ),
+        ],
+      ),
       body: _loading
           ? const Center(child: CircularProgressIndicator())
           : _error != null
@@ -90,6 +111,10 @@ class _HomeScreenState extends State<HomeScreen> {
                                 '${p.category} · ₹${p.price.toStringAsFixed(0)}',
                               ),
                               isThreeLine: true,
+                              trailing: FilledButton.tonal(
+                                onPressed: () => _addToCart(p),
+                                child: const Text('Add to cart'),
+                              ),
                             ),
                           );
                         },

@@ -14,7 +14,7 @@ class _SignupScreenState extends State<SignupScreen> {
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
   final _nameController = TextEditingController();
-  final _api = ApiService();
+  final _api = apiService;
 
   String? _error;
   bool _loading = false;
@@ -38,7 +38,7 @@ class _SignupScreenState extends State<SignupScreen> {
         password: _passwordController.text,
         name: _nameController.text.trim(),
       );
-      _api.setToken(token);
+      _api.setAuth(token, _emailController.text.trim());
       if (!mounted) return;
       Navigator.pushReplacementNamed(context, '/home');
     } on ApiException catch (e) {
