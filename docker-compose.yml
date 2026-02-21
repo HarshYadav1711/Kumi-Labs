@@ -9,7 +9,7 @@ services:
   users:
     build: ./services/users
     ports:
-      - "8000:8000"
+      - "8001:8000"
     environment:
       USERS_MONGODB_URL: mongodb://mongodb:27017
       USERS_MONGODB_DB: users_db
@@ -20,7 +20,7 @@ services:
   catalog:
     build: ./services/catalog
     ports:
-      - "8001:8000"
+      - "8002:8000"
     environment:
       CATALOG_MONGODB_URL: mongodb://mongodb:27017
       CATALOG_MONGODB_DB: catalog_db
@@ -30,7 +30,7 @@ services:
   orders:
     build: ./services/orders
     ports:
-      - "8002:8000"
+      - "8003:8000"
     environment:
       ORDERS_MONGODB_URL: mongodb://mongodb:27017
       ORDERS_MONGODB_DB: orders_db
@@ -40,7 +40,7 @@ services:
   delivery:
     build: ./services/delivery
     ports:
-      - "8003:8000"
+      - "8004:8000"
     environment:
       DELIVERY_MONGODB_URL: mongodb://mongodb:27017
       DELIVERY_MONGODB_DB: delivery_db

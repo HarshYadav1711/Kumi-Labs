@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:http/http.dart' as http;
 
 import '../models/cart.dart';
@@ -7,11 +8,13 @@ import '../models/order.dart';
 import '../models/order_status.dart';
 import '../models/product.dart';
 
-/// Base URLs. Use 10.0.2.2 for Android emulator, localhost for iOS simulator.
-const String _baseUsers = 'http://10.0.2.2:8000';
-const String _baseCatalog = 'http://10.0.2.2:8001';
-const String _baseOrders = 'http://10.0.2.2:8002';
-const String _baseDelivery = 'http://10.0.2.2:8003';
+/// Web (browser) uses localhost; Android emulator uses 10.0.2.2.
+String get _host => kIsWeb ? 'localhost' : '10.0.2.2';
+
+String get _baseUsers => 'http://$_host:8001';
+String get _baseCatalog => 'http://$_host:8002';
+String get _baseOrders => 'http://$_host:8003';
+String get _baseDelivery => 'http://$_host:8004';
 
 class ApiException implements Exception {
   final String message;

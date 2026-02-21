@@ -1,11 +1,18 @@
 from datetime import datetime, timezone
 
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 
 from database import close_db, get_db
 from models import OrderStatus, UpdateStatusRequest
 
 app = FastAPI(title="Delivery and Order Status Service")
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 VALID_STATUSES = {"PLACED", "PACKED", "OUT_FOR_DELIVERY", "DELIVERED"}
 

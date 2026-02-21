@@ -1,4 +1,5 @@
 from fastapi import Depends, FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 
 from auth import OTP_VALUE, create_token, decode_token, hash_password, verify_password
@@ -7,6 +8,12 @@ from database import close_db, get_db
 from models import LoginRequest, ProfileResponse, RegisterRequest, TokenResponse
 
 app = FastAPI(title="User Service")
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 security = HTTPBearer(auto_error=False)
 
 
