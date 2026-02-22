@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/Fun/Kumi Labs/build/cmake_install.cmake",
+		"D:/Fun/Kumi Labs/build/flutter/cmake_install.cmake",
+		"D:/Fun/Kumi Labs/build/runner/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

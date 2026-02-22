@@ -1,0 +1,3 @@
+C:\msys64\mingw64\bin\cmake.exe -E rm -f CMakeFiles\kumi_app.dir/objects.a
+C:\msys64\mingw64\bin\ar.exe qc CMakeFiles\kumi_app.dir/objects.a @CMakeFiles\kumi_app.dir\objects1.rsp
+C:\msys64\mingw64\bin\c++.exe -g -mwindows -Wl,--whole-archive CMakeFiles\kumi_app.dir/objects.a -Wl,--no-whole-archive -o kumi_app.exe -Wl,--out-implib,libkumi_app.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\kumi_app.dir\linkLibs.rsp

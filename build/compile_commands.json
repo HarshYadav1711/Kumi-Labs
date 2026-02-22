@@ -1,0 +1,74 @@
+[
+{
+  "directory": "D:/Fun/Kumi Labs/build/flutter",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DUNICODE -D_DEBUG -D_HAS_EXCEPTIONS=0 -D_UNICODE @CMakeFiles/flutter_wrapper_plugin.dir/includes_CXX.rsp -g -fvisibility=hidden /W4 /WX /wd\\\"4100\\\" /EHsc -o CMakeFiles\\flutter_wrapper_plugin.dir\\ephemeral\\cpp_client_wrapper\\core_implementations.cc.obj -c \"D:\\Fun\\Kumi Labs\\app\\windows\\flutter\\ephemeral\\cpp_client_wrapper\\core_implementations.cc\"",
+  "file": "D:/Fun/Kumi Labs/app/windows/flutter/ephemeral/cpp_client_wrapper/core_implementations.cc",
+  "output": "flutter/CMakeFiles/flutter_wrapper_plugin.dir/ephemeral/cpp_client_wrapper/core_implementations.cc.obj"
+},
+{
+  "directory": "D:/Fun/Kumi Labs/build/flutter",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DUNICODE -D_DEBUG -D_HAS_EXCEPTIONS=0 -D_UNICODE @CMakeFiles/flutter_wrapper_plugin.dir/includes_CXX.rsp -g -fvisibility=hidden /W4 /WX /wd\\\"4100\\\" /EHsc -o CMakeFiles\\flutter_wrapper_plugin.dir\\ephemeral\\cpp_client_wrapper\\standard_codec.cc.obj -c \"D:\\Fun\\Kumi Labs\\app\\windows\\flutter\\ephemeral\\cpp_client_wrapper\\standard_codec.cc\"",
+  "file": "D:/Fun/Kumi Labs/app/windows/flutter/ephemeral/cpp_client_wrapper/standard_codec.cc",
+  "output": "flutter/CMakeFiles/flutter_wrapper_plugin.dir/ephemeral/cpp_client_wrapper/standard_codec.cc.obj"
+},
+{
+  "directory": "D:/Fun/Kumi Labs/build/flutter",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DUNICODE -D_DEBUG -D_HAS_EXCEPTIONS=0 -D_UNICODE @CMakeFiles/flutter_wrapper_plugin.dir/includes_CXX.rsp -g -fvisibility=hidden /W4 /WX /wd\\\"4100\\\" /EHsc -o CMakeFiles\\flutter_wrapper_plugin.dir\\ephemeral\\cpp_client_wrapper\\plugin_registrar.cc.obj -c \"D:\\Fun\\Kumi Labs\\app\\windows\\flutter\\ephemeral\\cpp_client_wrapper\\plugin_registrar.cc\"",
+  "file": "D:/Fun/Kumi Labs/app/windows/flutter/ephemeral/cpp_client_wrapper/plugin_registrar.cc",
+  "output": "flutter/CMakeFiles/flutter_wrapper_plugin.dir/ephemeral/cpp_client_wrapper/plugin_registrar.cc.obj"
+},
+{
+  "directory": "D:/Fun/Kumi Labs/build/flutter",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DUNICODE -D_DEBUG -D_HAS_EXCEPTIONS=0 -D_UNICODE @CMakeFiles/flutter_wrapper_app.dir/includes_CXX.rsp -g /W4 /WX /wd\\\"4100\\\" /EHsc -o CMakeFiles\\flutter_wrapper_app.dir\\ephemeral\\cpp_client_wrapper\\core_implementations.cc.obj -c \"D:\\Fun\\Kumi Labs\\app\\windows\\flutter\\ephemeral\\cpp_client_wrapper\\core_implementations.cc\"",
+  "file": "D:/Fun/Kumi Labs/app/windows/flutter/ephemeral/cpp_client_wrapper/core_implementations.cc",
+  "output": "flutter/CMakeFiles/flutter_wrapper_app.dir/ephemeral/cpp_client_wrapper/core_implementations.cc.obj"
+},
+{
+  "directory": "D:/Fun/Kumi Labs/build/flutter",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DUNICODE -D_DEBUG -D_HAS_EXCEPTIONS=0 -D_UNICODE @CMakeFiles/flutter_wrapper_app.dir/includes_CXX.rsp -g /W4 /WX /wd\\\"4100\\\" /EHsc -o CMakeFiles\\flutter_wrapper_app.dir\\ephemeral\\cpp_client_wrapper\\standard_codec.cc.obj -c \"D:\\Fun\\Kumi Labs\\app\\windows\\flutter\\ephemeral\\cpp_client_wrapper\\standard_codec.cc\"",
+  "file": "D:/Fun/Kumi Labs/app/windows/flutter/ephemeral/cpp_client_wrapper/standard_codec.cc",
+  "output": "flutter/CMakeFiles/flutter_wrapper_app.dir/ephemeral/cpp_client_wrapper/standard_codec.cc.obj"
+},
+{
+  "directory": "D:/Fun/Kumi Labs/build/flutter",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DUNICODE -D_DEBUG -D_HAS_EXCEPTIONS=0 -D_UNICODE @CMakeFiles/flutter_wrapper_app.dir/includes_CXX.rsp -g /W4 /WX /wd\\\"4100\\\" /EHsc -o CMakeFiles\\flutter_wrapper_app.dir\\ephemeral\\cpp_client_wrapper\\flutter_engine.cc.obj -c \"D:\\Fun\\Kumi Labs\\app\\windows\\flutter\\ephemeral\\cpp_client_wrapper\\flutter_engine.cc\"",
+  "file": "D:/Fun/Kumi Labs/app/windows/flutter/ephemeral/cpp_client_wrapper/flutter_engine.cc",
+  "output": "flutter/CMakeFiles/flutter_wrapper_app.dir/ephemeral/cpp_client_wrapper/flutter_engine.cc.obj"
+},
+{
+  "directory": "D:/Fun/Kumi Labs/build/flutter",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DUNICODE -D_DEBUG -D_HAS_EXCEPTIONS=0 -D_UNICODE @CMakeFiles/flutter_wrapper_app.dir/includes_CXX.rsp -g /W4 /WX /wd\\\"4100\\\" /EHsc -o CMakeFiles\\flutter_wrapper_app.dir\\ephemeral\\cpp_client_wrapper\\flutter_view_controller.cc.obj -c \"D:\\Fun\\Kumi Labs\\app\\windows\\flutter\\ephemeral\\cpp_client_wrapper\\flutter_view_controller.cc\"",
+  "file": "D:/Fun/Kumi Labs/app/windows/flutter/ephemeral/cpp_client_wrapper/flutter_view_controller.cc",
+  "output": "flutter/CMakeFiles/flutter_wrapper_app.dir/ephemeral/cpp_client_wrapper/flutter_view_controller.cc.obj"
+},
+{
+  "directory": "D:/Fun/Kumi Labs/build/runner",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFLUTTER_VERSION=\\\"1.0.0+1\\\" -DFLUTTER_VERSION_BUILD=1 -DFLUTTER_VERSION_MAJOR=1 -DFLUTTER_VERSION_MINOR=0 -DFLUTTER_VERSION_PATCH=0 -DNOMINMAX -DUNICODE -D_DEBUG -D_HAS_EXCEPTIONS=0 -D_UNICODE @CMakeFiles/kumi_app.dir/includes_CXX.rsp -g /W4 /WX /wd\\\"4100\\\" /EHsc -o CMakeFiles\\kumi_app.dir\\flutter_window.cpp.obj -c \"D:\\Fun\\Kumi Labs\\app\\windows\\runner\\flutter_window.cpp\"",
+  "file": "D:/Fun/Kumi Labs/app/windows/runner/flutter_window.cpp",
+  "output": "runner/CMakeFiles/kumi_app.dir/flutter_window.cpp.obj"
+},
+{
+  "directory": "D:/Fun/Kumi Labs/build/runner",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFLUTTER_VERSION=\\\"1.0.0+1\\\" -DFLUTTER_VERSION_BUILD=1 -DFLUTTER_VERSION_MAJOR=1 -DFLUTTER_VERSION_MINOR=0 -DFLUTTER_VERSION_PATCH=0 -DNOMINMAX -DUNICODE -D_DEBUG -D_HAS_EXCEPTIONS=0 -D_UNICODE @CMakeFiles/kumi_app.dir/includes_CXX.rsp -g /W4 /WX /wd\\\"4100\\\" /EHsc -o CMakeFiles\\kumi_app.dir\\main.cpp.obj -c \"D:\\Fun\\Kumi Labs\\app\\windows\\runner\\main.cpp\"",
+  "file": "D:/Fun/Kumi Labs/app/windows/runner/main.cpp",
+  "output": "runner/CMakeFiles/kumi_app.dir/main.cpp.obj"
+},
+{
+  "directory": "D:/Fun/Kumi Labs/build/runner",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFLUTTER_VERSION=\\\"1.0.0+1\\\" -DFLUTTER_VERSION_BUILD=1 -DFLUTTER_VERSION_MAJOR=1 -DFLUTTER_VERSION_MINOR=0 -DFLUTTER_VERSION_PATCH=0 -DNOMINMAX -DUNICODE -D_DEBUG -D_HAS_EXCEPTIONS=0 -D_UNICODE @CMakeFiles/kumi_app.dir/includes_CXX.rsp -g /W4 /WX /wd\\\"4100\\\" /EHsc -o CMakeFiles\\kumi_app.dir\\utils.cpp.obj -c \"D:\\Fun\\Kumi Labs\\app\\windows\\runner\\utils.cpp\"",
+  "file": "D:/Fun/Kumi Labs/app/windows/runner/utils.cpp",
+  "output": "runner/CMakeFiles/kumi_app.dir/utils.cpp.obj"
+},
+{
+  "directory": "D:/Fun/Kumi Labs/build/runner",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFLUTTER_VERSION=\\\"1.0.0+1\\\" -DFLUTTER_VERSION_BUILD=1 -DFLUTTER_VERSION_MAJOR=1 -DFLUTTER_VERSION_MINOR=0 -DFLUTTER_VERSION_PATCH=0 -DNOMINMAX -DUNICODE -D_DEBUG -D_HAS_EXCEPTIONS=0 -D_UNICODE @CMakeFiles/kumi_app.dir/includes_CXX.rsp -g /W4 /WX /wd\\\"4100\\\" /EHsc -o CMakeFiles\\kumi_app.dir\\win32_window.cpp.obj -c \"D:\\Fun\\Kumi Labs\\app\\windows\\runner\\win32_window.cpp\"",
+  "file": "D:/Fun/Kumi Labs/app/windows/runner/win32_window.cpp",
+  "output": "runner/CMakeFiles/kumi_app.dir/win32_window.cpp.obj"
+},
+{
+  "directory": "D:/Fun/Kumi Labs/build/runner",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DFLUTTER_VERSION=\\\"1.0.0+1\\\" -DFLUTTER_VERSION_BUILD=1 -DFLUTTER_VERSION_MAJOR=1 -DFLUTTER_VERSION_MINOR=0 -DFLUTTER_VERSION_PATCH=0 -DNOMINMAX -DUNICODE -D_DEBUG -D_HAS_EXCEPTIONS=0 -D_UNICODE @CMakeFiles/kumi_app.dir/includes_CXX.rsp -g /W4 /WX /wd\\\"4100\\\" /EHsc -o CMakeFiles\\kumi_app.dir\\__\\flutter\\generated_plugin_registrant.cc.obj -c \"D:\\Fun\\Kumi Labs\\app\\windows\\flutter\\generated_plugin_registrant.cc\"",
+  "file": "D:/Fun/Kumi Labs/app/windows/flutter/generated_plugin_registrant.cc",
+  "output": "runner/CMakeFiles/kumi_app.dir/__/flutter/generated_plugin_registrant.cc.obj"
+}
+]
