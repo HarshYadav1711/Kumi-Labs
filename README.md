@@ -245,13 +245,9 @@ Manifests live in `k8s/`. They are intended for local clusters (Minikube or Kind
 
 ---
 
-## AI and tooling transparency
+## AI & Tooling Transparency
 
-This project was developed with AI assistance (Cursor/Composer). The following is a concise summary for maintainers and evaluators.
-
-- **Scope of assistance:** Code for all four backend services, Flutter app (skeleton, cart, order confirmation, order tracking), Dockerfiles, `docker-compose.yml`, Kubernetes manifests, and this README were written with AI. Requirements and constraints (e.g. “no over-engineering”, “minimal”, “exactly four microservices”) were provided by the user; structure and implementation were generated to match.
-- **What was not used:** No proprietary or non-public APIs; only standard libraries and common open-source packages (FastAPI, Flutter SDK, Motor, PyJWT, etc.). No automated deployment or CI/CD was added beyond what is described above.
-- **Review and ownership:** The codebase is intended to be read, run, and modified by humans. Assumptions, limitations, and setup steps are documented here so that anyone can validate or change the system without relying on undocumented AI context.
-- **Reproducibility:** With the same prerequisites and the commands in this README, the system can be run locally, in Docker, or on a local Kubernetes cluster without additional hidden steps.
-
-If you have questions about design choices or where to change behaviour, the service responsibilities and API list above should point you to the right place in the repo.
+- **Tools used:** Cursor (Composer / AI-assisted editing) for most implementation work. No other AI or vibe coding tools were used for this repo.
+- **AI-assisted:** Backend service scaffolding (FastAPI routes, Pydantic models, MongoDB wiring); Flutter app skeleton and screens (login, signup, home, cart, order confirmation, order tracking); `api_service.dart` and API boilerplate; Dockerfiles, `docker-compose.yml`, and Kubernetes manifests; README structure and setup/API docs. Requirements and constraints (e.g. four microservices, no gateway, minimal scope) were supplied by the author; structure and code were generated to match.
+- **Manual:** Requirements and scope definition; design choices (ports, header-based user id, status flow); integration and wiring (e.g. app calling Delivery after creating an order); error handling and UX details (SnackBars, loading states, button disabling); seed script and demo flow; review, testing, and edits to generated code.
+- **Intent:** This section is for transparency. The project uses only standard, open-source dependencies; setup and behaviour are documented so the system can be run and modified without relying on undocumented AI context.

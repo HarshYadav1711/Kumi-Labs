@@ -132,6 +132,16 @@ class ApiService {
     return list.map((e) => Product.fromJson(e as Map<String, dynamic>)).toList();
   }
 
+  Future<List<String>> getCategories() async {
+    final uri = Uri.parse('$_baseCatalog/categories');
+    final response = await http.get(uri);
+    if (response.statusCode != 200) {
+      throw ApiException('Failed to load categories', response.statusCode);
+    }
+    final list = jsonDecode(response.body) as List<dynamic>;
+    return list.map((e) => (e as Map<String, dynamic>)['name'] as String).toList();
+  }
+
   Future<Cart> getCart() async {
     if (_userId == null) throw ApiException('Not logged in');
     final uri = Uri.parse('$_baseOrders/cart');
