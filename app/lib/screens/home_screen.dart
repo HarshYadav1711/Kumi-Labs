@@ -72,6 +72,14 @@ class _HomeScreenState extends State<HomeScreen> {
             icon: const Icon(Icons.shopping_cart_outlined),
             onPressed: () => Navigator.pushNamed(context, '/cart'),
           ),
+          IconButton(
+            icon: const Icon(Icons.logout),
+            tooltip: 'Log out',
+            onPressed: () {
+              _api.signOut();
+              Navigator.pushNamedAndRemoveUntil(context, '/login', (r) => false);
+            },
+          ),
         ],
       ),
       body: _loading

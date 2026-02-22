@@ -57,6 +57,11 @@ class ApiService {
     _userId = userId;
   }
 
+  void signOut() {
+    _token = null;
+    _userId = null;
+  }
+
   String? get userId => _userId;
 
   Map<String, String> _ordersHeaders() {
